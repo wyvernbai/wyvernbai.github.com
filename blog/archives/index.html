@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Blog Archive - Github.aSiteOf.me</title>
+  <meta name="author" content="WyvernBai">
 
   
-  <meta name="description" content=" Blog Archive 2011 post title
-Nov 22 2011 Recent Posts post title ">
+  <meta name="description" content="Blog Archive 2011 A Naive-bayse-classify Document classify writed by ruby
+Nov 22 2011 posted in naive bayse classify, ruby, source code Recent Posts &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,7 +25,7 @@ Nov 22 2011 Recent Posts post title ">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Github.aSiteOf.me" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -36,9 +36,9 @@ Nov 22 2011 Recent Posts post title ">
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Github.aSiteOf.me</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>A Record Site of My life in GitHub.</h2>
   
 </hgroup>
 
@@ -78,8 +78,12 @@ Nov 22 2011 Recent Posts post title ">
 
 <article>
   
-<h1><a href="/blog/2011/11/22/post-title/">post title</a></h1>
+<h1><a href="/blog/2011/11/22/post-title/">A Naive-bayse-classify Document classify writed by ruby</a></h1>
 <time datetime="2011-11-22T18:11:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>22</span> <span class='year'>2011</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/naive-bayse-classify/'>naive bayse classify</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/source-code/'>source code</a></span>
+</footer>
 
 
 </article>
@@ -98,14 +102,68 @@ Nov 22 2011 Recent Posts post title ">
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2011/11/22/post-title/">post title</a>
+        <a href="/blog/2011/11/22/post-title/">A Naive-bayse-classify Document classify writed by ruby</a>
       </li>
     
   </ul>
 </section>
 
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/wyvernbai">@wyvernbai</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'wyvernbai',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("wyvernbai", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/wyvernbai" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @wyvernbai</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/108880597196842544749?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
@@ -116,7 +174,7 @@ Nov 22 2011 Recent Posts post title ">
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2011 - Your Name -
+  Copyright &copy; 2011 - WyvernBai -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -126,6 +184,14 @@ Nov 22 2011 Recent Posts post title ">
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 

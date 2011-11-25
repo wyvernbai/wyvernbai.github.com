@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>post title - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>A Naive-bayse-classify Document classify writed by ruby - Github.aSiteOf.me</title>
+  <meta name="author" content="WyvernBai">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="== Description: naive_bayes_classify.rb naive_bayes_classify is a document classify programme. Usage: naive_bayes_classify [options] + where [options &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Github.aSiteOf.me" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -36,9 +35,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Github.aSiteOf.me</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>A Record Site of My life in GitHub.</h2>
   
 </hgroup>
 
@@ -66,7 +65,7 @@
   
   <header>
     
-      <h1 class="entry-title">Post Title</h1>
+      <h1 class="entry-title">A Naive-bayse-classify Document Classify Writed by Ruby</h1>
     
     
       <p class="meta">
@@ -89,7 +88,78 @@
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><h2>== Description:</h2>
+
+
+
+
+<h4>naive_bayes_classify.rb</h4>
+
+
+<pre><code>naive_bayes_classify is a document classify programme.
+</code></pre>
+
+<pre>
+    Usage:
+        naive_bayes_classify [options] <Dirname>+
+    where [options] are:
+    --train, -t \<s\>:   Train a model from a Dir
+    --test, -e \<s\>:   Test a dir from Mode
+    --model, -m \<s\>:   Model name for test or the output of train
+    --thres, -h \<f\>:   Threshold value for Naive Bayes Classify (default: 1.5)
+    --version, -v:   Print version and exit
+    --help, -l:   Show this message
+</pre>
+
+
+
+
+<h4>result_analyze.rb</h4>
+
+
+<pre><code>result_analyze is a naive_bayes_classify result analyze programme.
+</code></pre>
+
+<pre>
+    Usage:
+        result_analyze [options] <filename>
+    where [options] are:
+    --file, -f \<s\>:   Output file of "naive_bayes_classify"
+    --version, -v:   Print version and exit
+    --help, -h:   Show this message
+</pre>
+
+
+
+
+<h2>== Example:</h2>
+
+
+<p>Sample Data: http://people.csail.mit.edu/jrennie/20Newsgroups/</p>
+
+<h4>train</h4>
+
+
+<pre>
+    naive_bayes_classify.rb -t 20news-bydate-train -m 20news-bydate-train.model -h 1.5
+</pre>
+
+
+<h4>test</h4>
+
+
+<pre>
+    naive_bayes_classify.rb -e 20news-bydate-test -m 20news-bydate-train.model > 20news-bydate-test.res
+</pre>
+
+
+<h4>result analysis</h4>
+
+
+<pre>
+    result_analyze -f 20news-bydate-test.res
+</pre>
+
 </div>
 
 
@@ -98,7 +168,7 @@
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">WyvernBai</span></span>
 
       
 
@@ -115,13 +185,21 @@
 <time datetime="2011-11-22T18:11:00+08:00" pubdate data-updated="true">Nov 22<span>nd</span>, 2011</time>
       
 
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/naive-bayse-classify/'>naive bayse classify</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/source-code/'>source code</a>
+  
+</span>
+
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://wyvernbai.github.com/blog/2011/11/22/post-title/" data-via="" data-counturl="http://wyvernbai.github.com/blog/2011/11/22/post-title/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://wyvernbai.github.com/blog/2011/11/22/post-title/" data-via="wyvernbai" data-counturl="http://wyvernbai.github.com/blog/2011/11/22/post-title/" >Tweet</a>
   
+  
+  <div class="g-plusone" data-size="medium"></div>
   
   
 </div>
@@ -143,14 +221,68 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2011/11/22/post-title/">post title</a>
+        <a href="/blog/2011/11/22/post-title/">A Naive-bayse-classify Document classify writed by ruby</a>
       </li>
     
   </ul>
 </section>
 
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/wyvernbai">@wyvernbai</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'wyvernbai',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
 
 
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("wyvernbai", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/wyvernbai" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @wyvernbai</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/108880597196842544749?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
@@ -161,7 +293,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2011 - Your Name -
+  Copyright &copy; 2011 - WyvernBai -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -171,6 +303,14 @@
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 
